@@ -1,0 +1,163 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Nunito", sans-serif;
+    background: radial-gradient(at center bottom, #78350f, #fde047);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  header{
+    margin-top: 1rem;
+    padding: 1rem;
+    
+  }
+
+  .logobox{
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    gap: 1rem;
+  }
+
+  .logo{
+    width: 100px;
+    height: 100px;
+  }
+
+  #container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, #f3f4f6, #d1d5db);
+    border-radius: 10px;
+  }
+  
+  #title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #plot {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #legend {
+      text-align: center;
+  }
+  .legend {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .legend div {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  #tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    visibility: hidden;
+    /* z-index: 999; */
+  }
+  
+  /* .hidden {
+  } */
+  /* display: none; */
+  
+  /* Post Section */
+ #post {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    background: linear-gradient(to right, #f3f4f6, #d1d5db);
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  /* Styling for doping and no-doping cards */
+ .doping {
+    border-left: 5px solid red;
+    background: linear-gradient(to right, #fda4af, #f43f5e);
+  }
+  
+  .no-doping {
+    border-left: 5px solid green;
+    background: linear-gradient(to left, #10b981, #65a30d);
+  }
+
+  footer{
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    display: inline-flex;
+    gap: 1rem;
+  }
+
+  footer p > a{
+    text-decoration: none;
+    color: black;
+    
+  }
+  footer p > a:hover{
+    color: #fde047;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    #container {
+      padding: 10px;
+    }
+  
+    #title {
+      font-size: 20px;
+    }
+  
+    .legend div {
+      margin-right: 5px;
+    }
+  }
+  
+  
